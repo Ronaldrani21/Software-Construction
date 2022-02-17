@@ -1,0 +1,26 @@
+FUNCTIONAL REQUIREMENTS
+The system should prompt the user to create an account and then sign in.
+The system should allow the users to access the registration forms.
+The system should display room details
+The system should allow the user to book a hostel room depending on the availablity of the rooms.
+The system should allow the admin to edit, update and delete student details and room details in the system
+The system should have an admin panel and a students dashboard
+The system should allow a user to change their password
+The system should allow the admin to control the status of fees payment.
+The system should allow the admin to add new users to the system’s database.
+System should allow the admin to delete registered students from the system’s database incase they leave the room.
+
+
+NON-FUNCTIONAL REQUIREMENTS
+The system should be secure for example through features like password generation and account creation.
+The system should be user friendly or easy to use.
+The system should be fast and reliable
+The system should be compatible with different operating systems.
+The system should allow multiple users to access the system at the same time.
+
+
+SOFTWARE REQUIREMENTS
+• Operating systems: Windows, linux, MAC
+• Database:MySQL
+• Web browser like Google chrome
+
