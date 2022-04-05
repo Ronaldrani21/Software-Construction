@@ -1,53 +1,45 @@
 package com.example.Hostel.booking.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
-
-@Entity
-@Table(name = "ROOMS")
-public class Rooms {
-
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long roomId;
-
-	@Column
-	private int numberRoomsOfThisType;
-
-	@Column
-	private RoomTypes roomType;
-
-	public long getRoomId() {
-		return roomId;
-	}
-
-	public void setRoomId(long roomId) {
-		this.roomId = roomId;
-	}
-
-	public int getNumberRoomsOfThisType() {
-		return numberRoomsOfThisType;
-	}
-
-	public void setNumberRoomsOfThisType(int i) {
-		this.numberRoomsOfThisType = i;
-	}
-
-	public RoomTypes getRoomType() {
-		return roomType;
-	}
-
-	public void setRoomType(RoomTypes roomType) {
-		this.roomType = roomType;
-	}
-
-	@Override
-	public String toString() {
-		return "Rooms [roomId=" + roomId + ", numberRoomsOfThisType=" + numberRoomsOfThisType + ", roomType=" + roomType
-				+ "]";
-	}
-}
+import javax.persistence.Column;  
+import javax.persistence.Entity;  
+import javax.persistence.Id;  
+import javax.persistence.Table;  
+//mark class as an Entity   
+@Entity  
+//defining class name as Table name  
+@Table  
+public class Rooms  
+{  
+//Defining room id as primary key  
+@Id  
+@Column  
+private int roomid;  
+@Column  
+private String roomType;   
+@Column  
+private int price;  
+public int getRoomid()   
+{  
+return roomid;  
+}  
+public void setBookid(int roomid)   
+{  
+this.roomid = roomid;  
+}  
+public String getroomType()  
+{  
+return roomType;  
+}  
+public void setroomType(String roomType)   
+{  
+this.roomType = roomType;  
+}  
+public int getPrice()   
+{  
+return price;  
+}  
+public void setPrice(int price)   
+{  
+this.price = price;  
+}  
+}  
